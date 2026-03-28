@@ -43,5 +43,6 @@ export default function SearchResults(
 
   function renderError(err) {
     root.outerHTML = generateErrorHTML(err);
+    root = document.getElementById("search-error");
   }
 }
