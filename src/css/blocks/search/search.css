@@ -8,9 +8,10 @@
   border-radius: var(--br-300);
 }
 .search__field {
+  align-items: center;
   flex-basis: 24.42rem;
   flex-grow: 1;
-  padding: 0.642rem 0.92rem; /* SPACING */
+  padding-left: 0.92rem;
 }
 
 .search__icon {
@@ -25,6 +26,7 @@
   font-family: inherit;
   color: var(--c-neutral-200);
   font-weight: var(--fw-200);
+  padding: 0.642rem 0; /* SPACING */
 }
 
 .search__btn {
