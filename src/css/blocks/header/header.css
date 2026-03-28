@@ -1,0 +1,28 @@
+.header {
+  background-image: url("/img/header-bg.png");
+  position: relative;
+  padding: 5.86rem 0 5.57rem; /* SPACING */
+  background-color: var(--c-neutral-700);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--c-neutral-100);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  letter-spacing: -4.5%;
+}
+
+.header__search {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
