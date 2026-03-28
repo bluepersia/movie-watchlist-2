@@ -42,8 +42,8 @@ export default function generateMoviesHTML(movies, watchlist) {
         </p>
       </div>
     </article>
-  </li>
-</ul>`;
+  </li>`;
     })
-    .join("\n")}`;
+    .join("\n")}
+</ul>`;
 }
