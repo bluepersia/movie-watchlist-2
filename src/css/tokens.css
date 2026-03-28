@@ -13,4 +13,10 @@
 
   /* Font Families */
   --f-inter: "Inter", sans-serif;
+
+  /* Font Sizes */
+  --fs-100: 0.86rem;
+  --fs-200: 1rem;
+  --fs-300: 1.29rem;
+  --fs-400: 3.07rem;
 }
