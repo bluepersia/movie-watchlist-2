@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --c-neutral-100: #fff;
+  --c-neutral-200: #a5a5a5;
+  --c-neutral-300: #787878;
+  --c-neutral-400: #4b4b4b;
+  --c-neutral-500: #1c1c1c;
+  --c-neutral-600: #121212;
+  --c-neutral-700: #0e0e0e;
+  --c-gold-100: #fec654;
+  --c-gray-100: #9ca3af;
+  --c-gray-800: #2e2e2f;
+
+  /* Font Families */
+  --f-inter: "Inter", sans-serif;
+
+  /* Font Sizes */
+  --fs-100: 0.86rem;
+  --fs-200: 1rem;
+  --fs-300: 1.29rem;
+  --fs-400: 3.07rem;
+
+  /* Font Weights */
+  --fw-100: 400;
+  --fw-200: 500;
+  --fw-300: 700;
+  --fw-400: 800;
+
+  /* Line Heights */
+  --lh-100: 1.43rem;
+
+  /* Border Radiuses */
+  --br-100: 0.071rem;
+  --br-200: 0.143rem;
+  --br-300: 0.429rem;
+}
