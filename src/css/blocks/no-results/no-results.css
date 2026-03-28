@@ -1,0 +1,16 @@
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-results__icon {
+  margin-bottom: 0.56rem; /* SPACING */
+}
+
+.no-results__text {
+  color: var(--c-gray-800);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-300);
+}
