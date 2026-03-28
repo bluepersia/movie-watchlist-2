@@ -1,0 +1,6 @@
+.movie-list {
+  padding: 4.35rem 0 0; /* SPACING */
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.78rem; /* SPACING */
+}

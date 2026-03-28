@@ -1,6 +1,6 @@
 import { generateEndpointURL } from "./utils.js";
 
-export default function Search(root, setSearchResults) {
+export default function Search(root, setSearchResults, setSearchError) {
   const formEl = root.querySelector("[data-form]");
 
   formEl.addEventListener("submit", handleFormSubmit);
@@ -18,6 +18,11 @@ export default function Search(root, setSearchResults) {
     fetch(generateEndpointURL(`s=${movieTitle}`))
       .then((res) => res.json())
       .then(async (data) => {
+        if (!data.Search) {
+          throw Error(
+            "Unable to find what you're looking for. Please try another search"
+          );
+        }
         const responses = await Promise.all(
           data.Search.map((movie) =>
             fetch(generateEndpointURL(`i=${movie.imdbID}`))
@@ -28,6 +33,9 @@ export default function Search(root, setSearchResults) {
         );
 
         setSearchResults(jsons);
+      })
+      .catch((err) => {
+        setSearchError(err);
       });
   }
 }
