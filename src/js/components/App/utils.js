@@ -5,4 +5,8 @@ function setSearchResults(state, results) {
   };
 }
 
-export { setSearchResults };
+function setError(state, err) {
+  return { ...state, searchErr: err };
+}
+
+export { setSearchResults, setError };

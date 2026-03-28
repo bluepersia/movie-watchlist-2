@@ -1,9 +1,10 @@
 import generateMoviesHTML from "../../utils/generateMoviesHTML.js";
-import { setResults } from "./utils.js";
+import { generateErrorHTML, setResults } from "./utils.js";
 
 export default function SearchResults(
   root,
   searchResultsChanged,
+  searchErrorChanged,
   watchlistContext
 ) {
   let state = {
@@ -11,6 +12,7 @@ export default function SearchResults(
   };
 
   searchResultsChanged.push(render);
+  searchErrorChanged.push(renderError);
 
   function handleClick(e) {
     if (e.target.dataset.add) {
@@ -37,5 +39,9 @@ export default function SearchResults(
     root = document.getElementById("movie-list");
 
     root.addEventListener("click", handleClick);
+  }
+
+  function renderError(err) {
+    root.outerHTML = generateErrorHTML(err);
   }
 }
