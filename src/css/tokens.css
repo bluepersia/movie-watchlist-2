@@ -12,5 +12,5 @@
   --c-gray-800: #2e2e2f;
 
   /* Font Families */
-  -f-inter: "Inter", sans-serif;
+  --f-inter: "Inter", sans-serif;
 }
