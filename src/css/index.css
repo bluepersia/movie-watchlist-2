@@ -24,6 +24,10 @@ main {
   background-color: var(--c-neutral-600);
 }
 
+main > * {
+  flex-grow: 1;
+}
+
 button,
 input,
 img {
