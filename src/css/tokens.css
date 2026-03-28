@@ -10,4 +10,7 @@
   --c-gold-100: #fec654;
   --c-gray-100: #9ca3af;
   --c-gray-800: #2e2e2f;
+
+  /* Font Families */
+  -f-inter: "Inter", sans-serif;
 }
