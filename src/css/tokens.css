@@ -1,0 +1,13 @@
+:root {
+  /* Colors */
+  --c-neutral-100: #fff;
+  --c-neutral-200: #a5a5a5;
+  --c-neutral-300: #787878;
+  --c-neutral-400: #4b4b4b;
+  --c-neutral-500: #1c1c1c;
+  --c-neutral-600: #121212;
+  --c-neutral-700: #0e0e0e;
+  --c-gold-100: #fec654;
+  --c-gray-100: #9ca3af;
+  --c-gray-800: #2e2e2f;
+}
