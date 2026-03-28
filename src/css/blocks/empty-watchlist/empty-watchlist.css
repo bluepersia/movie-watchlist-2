@@ -1,0 +1,21 @@
+.empty-watchlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem; /* SPACING */
+}
+
+.empty-watchlist__text {
+  color: var(--c-neutral-300);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-300);
+}
+
+.empty-watchlist__link {
+  display: flex;
+  align-items: center;
+  color: var(--c-neutral-100);
+  text-decoration: none;
+  column-gap: 0.5rem; /* SPACING */
+}
