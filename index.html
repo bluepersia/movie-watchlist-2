@@ -19,7 +19,41 @@
     <link rel="stylesheet" href="./src/css/utilities.css" />
 
     <!-- Blocks-->
+    <link rel="stylesheet" href="./src/css/blocks/header/header.css" />
+    <link rel="stylesheet" href="./src/css/blocks/nav/nav.css" />
+    <link rel="stylesheet" href="./src/css/blocks/search/search.css" />
   </head>
 
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <h1 class="header__title">Find your film</h1>
+
+        <nav class="nav">
+          <a href="./watchlist.html" class="nav__link">My Watchlist</a>
+        </nav>
+
+        <section class="header__search search container" id="search">
+          <h2 class="search__title sr-only">Search</h2>
+          <form class="search__form" data-form>
+            <div class="search__field">
+              <img class="search__icon" src="./img/Search.png" alt="" />
+              <label for="search-input" class="sr-only">Movie Title</label>
+              <input
+                class="search__input"
+                name="movie-title"
+                id="search-input"
+                placeholder="Blade Runner"
+                required
+              />
+            </div>
+
+            <button class="search__btn" type="submit">Search</button>
+          </form>
+        </section>
+      </div>
+    </header>
+
+    <script src="./src/js/index.js" type="module"></script>
+  </body>
 </html>

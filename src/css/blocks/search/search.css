@@ -1,0 +1,40 @@
+.search__form,
+.search__field {
+  display: flex;
+}
+
+.search__form {
+  background-color: var(--c-gray-800);
+  border-radius: var(--br-300);
+}
+.search__field {
+  flex-basis: 24.42rem;
+  flex-grow: 1;
+  padding: 0.642rem 0.92rem; /* SPACING */
+}
+
+.search__icon {
+  width: 1.43rem;
+  height: 1.43rem;
+  margin-right: 0.571rem; /* SPACING */
+}
+
+.search__input {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  color: var(--c-neutral-200);
+  font-weight: var(--fw-200);
+}
+
+.search__btn {
+  flex-basis: 8.57rem;
+  flex-grow: 1;
+  border-top-right-radius: var(--br-300);
+  border-bottom-right-radius: var(--br-300);
+  background-color: var(--c-neutral-400);
+  border: none;
+  color: var(--c-neutral-100);
+  font-family: inherit;
+  font-weight: var(--fw-200);
+}
