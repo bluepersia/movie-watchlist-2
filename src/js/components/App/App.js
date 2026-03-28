@@ -1,6 +1,7 @@
 import WatchlistContext from "../../contexts/WatchlistContext.js";
 import Search from "../Search/Search.js";
 import SearchResults from "../SearchResults/SearchResults.js";
+import Watchlist from "../Watchlist/Watchlist.js";
 import { setError, setSearchResults as setResults } from "./utils.js";
 
 export default function App() {
@@ -14,13 +15,18 @@ export default function App() {
 
   const watchlistContext = WatchlistContext();
 
-  Search(document.getElementById("search"), setSearchResults, setSearchError);
-  SearchResults(
-    document.getElementById("no-results"),
-    searchResultsChanged,
-    searchErrorChanged,
-    watchlistContext
-  );
+  if (window.location.pathname === "/index.html") {
+    Search(document.getElementById("search"), setSearchResults, setSearchError);
+
+    SearchResults(
+      document.getElementById("no-results"),
+      searchResultsChanged,
+      searchErrorChanged,
+      watchlistContext
+    );
+  } else if (window.location.pathname === "/watchlist.html") {
+    Watchlist(document.getElementById("empty-watchlist"), watchlistContext);
+  }
 
   function setSearchResults(results) {
     state = setResults(state, results);
