@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Movie Watchlist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS-->
+    <link rel="stylesheet" href="./src/css/tokens.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/utilities.css" />
+
+    <!-- Blocks-->
+    <link rel="stylesheet" href="./src/css/blocks/header/header.css" />
+    <link rel="stylesheet" href="./src/css/blocks/nav/nav.css" />
+    <link rel="stylesheet" href="./src/css/blocks/search/search.css" />
+    <link
+      rel="stylesheet"
+      href="./src/css/blocks/empty-watchlist/empty-watchlist.css"
+    />
+    <link rel="stylesheet" href="./src/css/blocks/movie-list/movie-list.css" />
+    <link rel="stylesheet" href="./src/css/blocks/movie-card/movie-card.css" />
+    <link
+      rel="stylesheet"
+      href="./src/css/blocks/search-error/search-error.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <h1 class="header__title">My Watchlist</h1>
+
+        <nav class="nav">
+          <a href="./index.html" class="nav__link">Search for movies</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="sr-only">Watchlist</h2>
+      <div class="empty-watchlist" id="empty-watchlist">
+        <p class="empty-watchlist__text">
+          Your watchlist is looking a little empty...
+        </p>
+        <a href="./index.html" class="empty-watchlist__link"
+          ><img
+            src="./img/add-icon.png"
+            alt=""
+            class="empty-watchlist__add-icon"
+          />Let's add some movies!</a
+        >
+      </div>
+    </main>
+
+    <script src="./src/js/index.js" type="module"></script>
+  </body>
+</html>
