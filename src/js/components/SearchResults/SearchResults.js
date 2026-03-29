@@ -1,5 +1,8 @@
-import generateMoviesHTML from "../../utils/generateMoviesHTML.js";
-import { generateErrorHTML, setResults } from "./utils.js";
+import {
+  generateErrorHTML,
+  generateSearchResultsHTML,
+  setResults,
+} from "./utils.js";
 
 export default function SearchResults(
   root,
@@ -31,7 +34,7 @@ export default function SearchResults(
 
   function render(movies) {
     state = setResults(state, movies);
-    root.outerHTML = generateMoviesHTML(
+    root.outerHTML = generateSearchResultsHTML(
       movies,
       watchlistContext.getWatchlist()
     );
