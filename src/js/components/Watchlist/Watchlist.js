@@ -1,4 +1,4 @@
-import generateWatchlistHTML from "../../utils/generateWatchlistHTML.js";
+import { generateWatchlistHTML } from "./utils.js";
 
 export default function Watchlist(root, watchlistContext) {
   renderWatchlist();
